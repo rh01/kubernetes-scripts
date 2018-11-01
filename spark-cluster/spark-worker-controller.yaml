@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
         - name: spark-worker
-          image: registry.cn-hangzhou.aliyuncs.com/sjq-study/spark:1.5.2_v1 
-          command: ["/start-worker"]
+          image: ramhiser/spark:2.0.1
+          command: ["/spark-worker"]
           ports:
             - containerPort: 8081
           resources:
